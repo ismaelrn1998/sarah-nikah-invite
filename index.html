@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wedding Invitation</title>
+  <meta name="description" content="Wedding invitation website with date, venue, photos, and background music." />
+
+  <!-- Optional: A clean, elegant font (online). You can remove if offline. -->
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lottie for animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js" defer></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Tap-to-enter overlay (enables audio & starts animation) -->
+  <div id="enter-overlay" aria-label="Tap to enter" role="dialog">
+    <div class="overlay-card">
+      <h1>You're Invited</h1>
+      <p class="names">Sarah R Nadaf <span>&amp;</span> Afroz Sheikh</p>
+      <button id="enter-btn" aria-label="Enter invitation">Enter</button>
+      <p class="hint">Tap to start music & view invitation</p>
+    </div>
+  </div>
+
+  <!-- Background audio (muted initially; will unmute on user tap) -->
+  <audio id="bg-music" src="assets/audio/background-song.mp3" preload="auto" loop></audio>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="sub">In the name of Allah, the Most Gracious, the Most Merciful</p>
+      <h1 class="couple">Sarah R Nadaf <span>&amp;</span> Afroz Sheikh</h1>
+      <p class="tagline">Request the honour of your presence</p>
+
+      <div class="details">
+        <div class="detail">
+          <h3>Marriage (Nikah)</h3>
+          <time datetime="2026-05-24">Sunday, 26th January 2025</time>
+        </div>
+        <div class="detail">
+          <h3>Venue</h3>
+          <address>
+            Taj Wedding Convention Hall,<br>
+            Davangere
+          </address>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Animation section -->
+<!-- <section class="animation-section" aria-label="Wedding animation">
+    <div id="wedding-animation" class="lottie-container" aria-hidden="true"></div> -->
+    <!-- Subtle ambient floating petals as a fallback / addition -->
+    <!-- <div class="petals" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>  -->
+
+<!-- <section class="video-section" aria-label="Wedding video">
+  <div class="video-wrapper">
+    <iframe
+      id="wedding-video"
+      class="yt-frame"
+      title="Wedding Invitation Video"
+      src="https://www.youtube-nocookie.com/embed/cV2RFv9EsbI?rel=0&modestbranding=1&playsinline=1&controls=1&mute=1&loop=1&playlist=cV2RFv9EsbI"
+      frameborder="0"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section> -->
+
+  <!-- Keep the subtle petals if you like; optional -->
+  <div class="petals" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+</section>
+
+  <!-- Groom Gallery -->
+  <section class="gallery">
+    <h2>Groom</h2>
+    <div class="grid">
+      <figure><img src="assets/groom/g1.jpg" alt="Groom photo 1"><figcaption></figcaption></figure>
+      <figure><img src="assets/groom/g2.jpg" alt="Groom photo 2"><figcaption></figcaption></figure>
+      <figure><img src="assets/groom/g3.jpg" alt="Groom photo 3"><figcaption></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Bride Gallery -->
+  <section class="gallery">
+    <h2>Bride</h2>
+    <div class="grid">
+      <figure><img src="assets/bride/b1.jpg" alt="Bride photo 1"><figcaption></figcaption></figure>
+      <figure><img src="assets/bride/b2.jpg" alt="Bride photo 2"><figcaption></figcaption></figure>
+      <figure><img src="assets/bride/b3.jpg" alt="Bride photo 3"><figcaption></figcaption></figure>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>With blessings from our families, we look forward to celebrating with you.</p>
+  </footer>
+</body>
+</html>
